@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="main-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <header>
+                <h4>CHAT SESSION</h4>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" onclick="toggleMenu()">Menu</button>
+                    <div class="dropdown-menu" id="dropdownMenu" style="display: none;>
+                        <button class="close-btn" onclick="closeMenu()">✖</button>
+                        <input type="text" class="search-user" placeholder="Search User" oninput="searchUser(event)">
+                        <select class="theme-selector" onchange="changeTheme(event)">
+                            <option>Change theme</option>
+                            <option value="black">Black</option>
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="grey">Grey</option>
+                            <option value="plum">Plum</option>
+                            <option value="navy">Navy</option>
+                            <option value="pink">Pink</option>
+                            <option value="purple">Purple</option>
+                            <option value="coral">Coral</option>
+                            <option value="orange">Orange</option>
+                            <option value="brown">Brown</option>
+                            <option value="cyan">Cyan</option>
+                            <option value="maroon">Maroon</option>
+                            <option value="olive">Olive</option>
+                        </select>
+                        <button class="bg-btn" onclick="toggleBackgroundMenu()">Change Background</button>
+
+<!-- Background Selection Menu -->
+<div id="bgMenu" class="bg-menu">
+    <p>Select Background:</p>
+    <div class="bg-options">
+        <img src="1.png" class="bg-option" onclick="changeBackgroundImage('bg1.jpg')">
+        <img src="2.png" class="bg-option" onclick="changeBackgroundImage('bg2.jpg')">
+        <img src="3.png" class="bg-option" onclick="changeBackgroundImage('bg3.jpg')">
+    </div>
+</div>
+                    </div>
+                </div>
+            </header>
+            <div class="user-list" id="userList"></div>
+        </div>
+
+        <!-- Chat Container -->
+        <div class="chat-container">
+            <header>
+                <h4>CHAT DETAILS</h4>
+            </header>
+            <div class="chat-box">
+                <div class="chat-header">
+                    <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="User" class="chat-avatar">
+                    <div>
+                        <p class="chat-username">John Mayers</p>
+                        <p class="chat-role">Accountant</p>
+                    </div>
+                </div>
+                <div class="chat-messages" id="chatMessages"></div>
+            </div>
+            <div class="message-box">
+                <input type="text" id="messageInput" placeholder="Type your message here...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

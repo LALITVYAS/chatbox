@@ -1,0 +1,232 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+}
+
+/* Main Container */
+.main-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 30%;
+    background: orange;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+header {
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+}
+
+/* Dropdown Styles */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Close Button */
+.close-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 5px;
+    float: right;
+}
+
+.search-user {
+    width: 90%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.theme-selector {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+/* User List */
+.user-list {
+    margin-top: 10px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: white;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Chat Container */
+.chat-container {
+    width: 70%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-container header {
+    background: orange;
+    color: white;
+    padding: 10px;
+}
+
+/* Chat Box */
+.chat-box {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    
+}
+
+/* Chat Header */
+.chat-header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.chat-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Message Box */
+.message-box {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    /* background: white; */
+    border-top: 1px solid #ddd;
+}
+
+.message-box input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.message-box button {
+    background: orange;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.sent{
+    background-color: rgb(207, 190, 190);
+}
+
+
+.bg-btn {
+    padding: 10px 15px;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.bg-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.bg-options {
+    display: flex;
+    gap: 10px;
+}
+
+.bg-option {
+    width: 80px;
+    height: 50px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.bg-option:hover {
+    border: 2px solid #ff9800;
+}
+.bg-btn {
+    padding: 10px 15px;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.bg-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.bg-options {
+    display: flex;
+    gap: 10px;
+}
+
+.bg-option {
+    width: 80px;
+    height: 50px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.bg-option:hover {
+    border: 2px solid #ff9800;
+}
+
+/* Apply background image only to chat section */
+.chat-container {
+    background: none; /* Remove conflicting styles */
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    transition: background 0.5s ease-in-out;
+}
